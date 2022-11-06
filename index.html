@@ -23,22 +23,22 @@
                     </ul>
                 </nav>
             </div>
-            <div class="header-contact">
-                <a href="mailto:info@devstudio.com" class="header-contact-item">info@devstudio.com</a>
-                <a href="tel:+380961111111" class="header-contact-item">+38 096 111 11 11</a>
-            </div>
+            <ul class="header-contact">
+                <li><a href="mailto:info@devstudio.com" class="header-contact-item">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" class="header-contact-item">+38 096 111 11 11</a></li>
+            </ul>
         </div>
     </header>
 
     <main>
-        <section class="order section">
+        <section class="order">
             <div class="container order-container">
                 <h1 class="order-h1">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
                 <button class="order-button">Замовити послугу</button>
             </div>
         </section>
 
-        <section class="part2 section">
+        <section class="part1 section">
             <div class="container">
                 <aside class="aside">
                     <div class="atext">
@@ -61,6 +61,11 @@
                         <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </div>
                 </aside>
+            </div>
+        </section>
+
+        <section class="part2 section">
+            <div class="container">
                 <h2 class="h2">Чим ми займаємося</h2>
                 <div class="actions">
                     <img src="./images/whatwedo1.png" alt="whatwedo1" class="whatwedo">
@@ -73,44 +78,50 @@
         <section class="part3 section">
             <div class="container">
                 <h2 class="h2">Наша команда</h2>
-                <div class="people">
-                    <div class="person">
+                <ul class="people">
+                    <li class="person">
                         <img src="./images/person1.png" alt="person1" width="270px">
-                        <h3 class="name">Ігор Дем'яненко</h3>
-                        <p class="position">Product Designer</p>
-                    </div>
-                    <div class="person">
+                        <div class="image-info">
+                            <h3 class="name">Ігор Дем'яненко</h3>
+                            <p class="position">Product Designer</p>
+                        </div>
+                    </li>
+                    <li class="person">
                         <img src="./images/person2.png" alt="person2" width="270px">
-                        <h3 class="name">Ольга Рєпіна</h3>
-                        <p class="position">Frontend Developer</p>
-                    </div>
-                    <div class="person">
+                        <div class="image-info">
+                            <h3 class="name">Ольга Рєпіна</h3>
+                            <p class="position">Frontend Developer</p>
+                        </div>
+                    </li>
+                    <li class="person">
                         <img src="./images/person3.png" alt="person3" width="270px">
-                        <h3 class="name">Микола Тарасов</h3>
-                        <p class="position">Marketing</p>
-                    </div>
-                    <div class="person">
+                        <div class="image-info">
+                            <h3 class="name">Микола Тарасов</h3>
+                            <p class="position">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="person">
                         <img src="./images/person4.png" alt="person4" width="270px">
-                        <h3 class="name">Михайло Єрмаков</h3>
-                        <p class="position">UI Designer</p>
-                    </div>
-                </div>
+                        <div class="image-info">
+                            <h3 class="name">Михайло Єрмаков</h3>
+                            <p class="position">UI Designer</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <div class="info">
-                <a href="#" class="web-studio2"><span class="web2">Web</span>Studio</a>
-                <address>
-                    <ul class="footer-info">
-                        <li class="space"><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer" class="point-footer"><span class="point-footer-white">м. Київ, пр-т Лесі Українки, 26</span></a></li>
-                        <li class="space"><a href="mailto:info@devstudio.com" class="point-footer">info@devstudio.com</a></li>
-                        <li><a href="tel:+380961111111" class="point-footer">+38 096 111 11 11</a></li>
-                    </ul>
-                </address>
-            </div>
+            <a href="#" class="web-studio2"><span class="web2">Web</span>Studio</a>
+            <address class="address">
+                <ul class="footer-info">
+                    <li class="space"><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer" class="point-footer"><span class="point-footer-white">м. Київ, пр-т Лесі Українки, 26</span></a></li>
+                    <li class="space"><a href="mailto:info@devstudio.com" class="point-footer">info@devstudio.com</a></li>
+                    <li><a href="tel:+380961111111" class="point-footer">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
         </div>
     </footer>
 </body>
