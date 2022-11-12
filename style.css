@@ -8,12 +8,20 @@
     --dark-white:#F5F4FA;
     --dark-blue:#188CE8;
 }
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 ul{
     padding: 0;
+    margin: 0;
+    list-style: none;
+}
+h1, h2, h3, p{
+    margin: 0;
 }
 .container{
     width: 1200px;
@@ -46,7 +54,7 @@ img{
     align-items: center;
 }
 .navigation-wrapper nav{
-    margin-left: 65px;
+    margin-left: 90px;
 }
 .web-studio{
     text-decoration: none;
@@ -65,6 +73,9 @@ img{
     justify-content: space-between;
     list-style-type: none;
 }
+.navigation li:not(:last-child){
+    margin-right: 50px;
+}
 .navpoint{
     text-decoration: none;
     color: var(--black);
@@ -73,8 +84,6 @@ img{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    margin-left: 25px;
-    margin-right: 25px;
 }
 .navpoint.current{
     color: var(--blue-color);
@@ -84,7 +93,6 @@ img{
 }
 .header-contact{
     display: flex;
-    list-style: none;
 }
 .header-contact-item{
     text-decoration: none;
@@ -157,7 +165,9 @@ img{
 .h3{
     color: var(--black);
     font-weight: 700;
+    font-size: 14px;
     line-height: 16px;
+    margin-bottom: 10px;
 }
 .h2{
     font-family: inherit;
@@ -170,17 +180,18 @@ img{
 }
 .actions{
     display: flex;
-    justify-content: space-between;
 }
 .whatwedo{
     width: 370px;
+}
+.actions li:not(:last-child){
+    margin-right: 30px;
 }
 .part3{
     background-color: var(--dark-white);
 }
 .people{
     display: flex;
-    list-style: none;
 }
 .person{
     display: inline-block;
@@ -193,8 +204,8 @@ img{
     margin-right: 40px;
 }
 .image-info{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 20px 24px;
+    line-height: 36px;
 }
 .name{
     font-family: inherit;
@@ -203,7 +214,7 @@ img{
     text-align: center;
     letter-spacing: 0.03em;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }
 .position{
     font-family: inherit;
@@ -259,10 +270,12 @@ img{
 }
 .filters{
     display: flex;
-    list-style: none;
     justify-content: center;
     margin: 0;
     margin-bottom: 50px;
+}
+.filters li:not(:last-child){
+    margin-right: 8px;
 }
 .filter-button{
     height: 38px;
@@ -270,7 +283,6 @@ img{
     border-radius: 4px;
     border:none;
     padding: 0 22px;
-    margin: 0 4px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -283,19 +295,25 @@ img{
     border-radius: 4px;
     color: var(--white);
 }
+.left-info{
+    border: 1px solid var(--dark-white);
+}
+.left-info h2, .left-info p{
+    text-align: left;
+}
 .imagesforfilters{
     display: flex;
     flex-wrap:  wrap;
     margin: 0;
 }
 .allimages{
-    width: 370px;
-    box-sizing: border-box;
-    border: 1px solid var(--dark-white);
-    list-style: none;
+    width: calc((100% - 60px) / 3);
+}
+.portfolio-image{
+    width: 100%;
 }
 .allimages:not(:nth-child(3n)){
-    margin-right: 45px;
+    margin-right: 30px;
 }
 .allimages:not(.last-row){
     margin-bottom: 30px;
