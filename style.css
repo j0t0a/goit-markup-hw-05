@@ -7,6 +7,7 @@
     --grey:#757575;
     --dark-white:#F5F4FA;
     --dark-blue:#188CE8;
+    --dark-white-2:#EEEEEE;
 }
 *{
     box-sizing: border-box;
@@ -296,7 +297,7 @@ img{
     color: var(--white);
 }
 .left-info{
-    border: 1px solid var(--dark-white);
+    border: 1px solid var(--dark-white-2);
 }
 .left-info h2, .left-info p{
     text-align: left;
