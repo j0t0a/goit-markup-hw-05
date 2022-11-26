@@ -8,6 +8,7 @@
     --dark-white:#F5F4FA;
     --dark-blue:#188CE8;
     --dark-white-2:#EEEEEE;
+    --icon-grey:#AFB1B8;
 }
 *{
     box-sizing: border-box;
@@ -100,6 +101,8 @@ img{
     color: var(--grey);
     font-size: 14px;
     font-weight: 500;
+    display: flex;
+    align-items: center;
 }
 .header-contact li:first-child{
     margin-right: 50px;
@@ -200,6 +203,7 @@ img{
     background: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
 }
 .person:not(:last-child){
     margin-right: 40px;
@@ -318,4 +322,95 @@ img{
 }
 .allimages:not(.last-row){
     margin-bottom: 30px;
+}
+.studio-icon{
+    fill: var(--grey);
+    margin-right: 10px;
+}
+.header-contact-item:hover .studio-icon{
+    fill: var(--blue-color);
+}
+.grey-square{
+    padding: 25px 0;
+    background-color: var(--dark-white);
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.socials{
+    display: flex;
+    padding: 0 32px;
+}
+.social-item{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-item:not(:last-child){
+    margin-right: 10px;
+}
+.social-icon{
+    fill: var(--icon-grey);
+}
+.social-item:hover{
+    background-color: var(--blue-color);
+    cursor: pointer;
+}
+.social-item:hover .social-icon{
+    fill: var(--white);
+}
+.clients{
+    display: flex;
+}
+.client-item{
+   width: 170px;
+   height: 92px;
+   border: 1px solid var(--icon-grey);
+   border-radius: 4px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.client-item:not(:last-child){
+   margin-right: 30px;
+}
+.client-icon{
+    fill: var(--icon-grey);
+}
+.client-item:hover{
+    border: 1px solid var(--blue-color);
+    cursor: pointer;
+}
+.client-item:hover .client-icon{
+    fill: var(--blue-color);
+}
+.footer-container{
+    display: flex;
+}
+.footer-join{
+    margin-left: 70px;
+}
+.join{
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: inherit;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.footer-socials{
+    display: flex;
+}
+.footer-social-item{
+    background: rgba(255, 255, 255, 0.1);
+}
+.footer-social-item:hover{
+    background: var(--blue-color);
+    cursor: pointer;
+}
+.footer-social-icon{
+    fill: var(--white);
+
 }
