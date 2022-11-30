@@ -410,7 +410,7 @@ img{
     border: 1px solid var(--blue-color);
     cursor: pointer;
 }
-.client-item:hover .client-icon, .client-item:hover .client-icon{
+.client-item:hover .client-icon, .client-item:focus .client-icon{
     fill: var(--blue-color);
 }
 .footer-container{
