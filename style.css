@@ -2,6 +2,7 @@
     --header-border-color:#ECECEC;
     --blue-color:#2196F3;
     --black:#010101; 
+    --dark-title: #212121;
     --dark-grey:#2F303A;
     --white:#FEFEFE;
     --grey:#757575;
@@ -111,11 +112,27 @@ img{
     color: var(--blue-color);
 }
 .order{
-    background-color: var(--dark-grey);
+    /* background-color: var(--dark-grey); */
     /* padding: 0 200px */
     padding-top: 200px;
     padding-bottom: 200px;
-    text-align: center
+    text-align: center;
+    background-image: url(./images/background-studio.jpg);
+    position: relative;
+}
+.order-container{
+    z-index: 3;
+    position: relative;
+}
+.order:before{
+    background: rgba(47, 48, 58, 0.4);
+    content:'';
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 .order-h1{
     margin: 0 auto 30px; /* Почему тогда здесь в одну строку, если до этого было неправльно? */
@@ -219,6 +236,7 @@ img{
     text-align: center;
     letter-spacing: 0.03em;
     margin-top: 0;
+    color: var(--dark-title);
     margin-bottom: 4px;
 }
 .position{
@@ -317,6 +335,14 @@ img{
 .portfolio-image{
     width: 100%;
 }
+.allimages .imageLink{
+    text-decoration: none;
+    display: block;
+    transition: .3s;
+}
+.allimages .imageLink:hover, .allimages .imageLink:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .allimages:not(:nth-child(3n)){
     margin-right: 30px;
 }
@@ -349,17 +375,17 @@ img{
     align-items: center;
     justify-content: center;
 }
-.social-item:not(:last-child){
+.socials li:not(:last-child), .footer-socials li:not(:last-child){
     margin-right: 10px;
 }
 .social-icon{
     fill: var(--icon-grey);
 }
-.social-item:hover{
+.social-item:hover, .social-item:focus{
     background-color: var(--blue-color);
     cursor: pointer;
 }
-.social-item:hover .social-icon{
+.social-item:hover .social-icon, .social-item:focus .social-icon{
     fill: var(--white);
 }
 .clients{
@@ -374,21 +400,22 @@ img{
    justify-content: center;
    align-items: center;
 }
-.client-item:not(:last-child){
+.clients li:not(:last-child){
    margin-right: 30px;
 }
 .client-icon{
     fill: var(--icon-grey);
 }
-.client-item:hover{
+.client-item:hover, .client-item:focus{
     border: 1px solid var(--blue-color);
     cursor: pointer;
 }
-.client-item:hover .client-icon{
+.client-item:hover .client-icon, .client-item:hover .client-icon{
     fill: var(--blue-color);
 }
 .footer-container{
     display: flex;
+    align-items: baseline;
 }
 .footer-join{
     margin-left: 70px;
@@ -398,7 +425,7 @@ img{
     text-transform: uppercase;
     font-family: inherit;
     margin-bottom: 20px;
-    padding-top: 10px;
+    font-weight: 700;
 }
 .footer-socials{
     display: flex;
@@ -406,7 +433,7 @@ img{
 .footer-social-item{
     background: rgba(255, 255, 255, 0.1);
 }
-.footer-social-item:hover{
+.footer-social-item:hover, .footer-social-item:focus{
     background: var(--blue-color);
     cursor: pointer;
 }
