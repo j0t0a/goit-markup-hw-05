@@ -43,9 +43,15 @@
         <section class="order">
             <div class="container order-container">
                 <h1 class="order-h1">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-                <button class="order-button">Замовити послугу</button>
+                <button data-modal-open class="order-button">Замовити послугу</button>
             </div>
         </section>
+
+        <div class="modal-mask is-hidden" data-modal>
+            <div class="modal-window">
+                <button data-modal-close class="jesuschrist">+</button>
+            </div>
+        </div>
 
         <section class="part1 section">
             <div class="container">
@@ -97,9 +103,18 @@
             <div class="container">
                 <h2 class="h2">Чим ми займаємося</h2>
                 <ul class="actions">
-                    <li><img src="./images/whatwedo1.png" alt="whatwedo1" class="whatwedo"></li>
-                    <li><img src="./images/whatwedo2.png" alt="whatwedo2" class="whatwedo"></li>
-                    <li><img src="./images/whatwedo3.png" alt="whatwedo3" class="whatwedo"></li>
+                    <li>
+                        <div class="what-we-do-text">десктопні додатки</div>
+                        <img src="./images/whatwedo1.png" alt="whatwedo1" class="whatwedo">
+                    </li>
+                    <li>
+                        <div class="what-we-do-text">мобільні додатки</div>
+                        <img src="./images/whatwedo2.png" alt="whatwedo2" class="whatwedo">
+                    </li>
+                    <li>
+                        <div class="what-we-do-text">дизайнерські рішення</div>
+                        <img src="./images/whatwedo3.png" alt="whatwedo3" class="whatwedo">
+                    </li>
                 </ul>
             </div>
         </section>
@@ -326,5 +341,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
