@@ -49,7 +49,36 @@
 
         <div class="modal-mask is-hidden" data-modal>
             <div class="modal-window">
-                <button data-modal-close class="jesuschrist">+</button>
+                <button data-modal-close class="jesuschrist">
+                    <svg width="11" height="11" class="close-icon">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <h2 class="leave-info">Залиште свої дані, ми вам передзвонимо</h2>
+                <form>
+                    <label>
+                        Ім'я
+                        <input type="text" name="name">
+                    </label>
+                    <label>
+                        Телефон
+                        <input type="number" name="phone">
+                    </label>
+                    <label>
+                        Пошта
+                        <input type="email" name="email">
+                    </label>
+                    <label>
+                        Коментар
+                        <textarea name="comment" placeholder="Введіть текст"></textarea>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="agree" hidden>
+                        <div class="checkbox"> </div>
+                        Погоджуюся з розсилкою та приймаю <a>Умови договору</a>
+                    </label>
+                    <button type="submit">Відправити</button>
+                </form>
             </div>
         </div>
 
@@ -104,15 +133,15 @@
                 <h2 class="h2">Чим ми займаємося</h2>
                 <ul class="actions">
                     <li>
-                        <div class="what-we-do-text">десктопні додатки</div>
+                        <p class="what-we-do-text">десктопні додатки</p>
                         <img src="./images/whatwedo1.png" alt="whatwedo1" class="whatwedo">
                     </li>
                     <li>
-                        <div class="what-we-do-text">мобільні додатки</div>
+                        <p class="what-we-do-text">мобільні додатки</p>
                         <img src="./images/whatwedo2.png" alt="whatwedo2" class="whatwedo">
                     </li>
                     <li>
-                        <div class="what-we-do-text">дизайнерські рішення</div>
+                        <p class="what-we-do-text">дизайнерські рішення</p>
                         <img src="./images/whatwedo3.png" alt="whatwedo3" class="whatwedo">
                     </li>
                 </ul>

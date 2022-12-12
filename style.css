@@ -525,7 +525,6 @@ img{
     background: var(--clear-white);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    rotate: 45deg;
     font-size: 25px;
     display: flex;
     justify-content: center;
@@ -534,6 +533,12 @@ img{
     top: 8px;
     right: 8px;
     cursor: pointer;
+}
+.jesuschrist .close-icon{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.jesuschrist:hover .close-icon, .jesuschrist:focus .close-icon{
+    fill: var(--blue-color);
 }
 .image-wrapper{
     position: relative;
